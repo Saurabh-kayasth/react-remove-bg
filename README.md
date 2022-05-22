@@ -9,7 +9,7 @@
 ### Usage
 This module uses Tensorflow bodypix model.
 ```javascript
-import removeBGTF from 'react-remove-bg';
+import { removeBGTF } from 'react-remove-bg';
 
 removeBGTF({
     imageSrc, // an image source
