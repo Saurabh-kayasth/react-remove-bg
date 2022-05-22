@@ -10,6 +10,8 @@
  - Github: [react-remove-bg-example](https://github.com/Saurabh-kayasth/react-remove-bg-example)
  - Live: Try [here](https://react-remove-bg-example.vercel.app/)
 
+![Screenshot_2022-05-22_11-39-21](https://user-images.githubusercontent.com/30195666/169681854-f29cab24-fc96-4385-86e8-704e8aff601b.png)
+
 ### Usage
 This module uses Tensorflow bodypix model.
 ```javascript
