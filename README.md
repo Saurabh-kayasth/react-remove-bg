@@ -1,7 +1,7 @@
 # react-remove-bg
 
-[![npm version](https://badge.fury.io/js/rn-webrtc.svg)](https://badge.fury.io/js/react-remove-bg)
-[![npm downloads](https://img.shields.io/npm/dt/rn-webrtc.svg?maxAge=2592000)](https://img.shields.io/npm/dm/react-remove-bg.svg?maxAge=2592000)
+[![npm version](https://badge.fury.io/js/react-remove-bg.svg)](https://badge.fury.io/js/react-remove-bg)
+[![npm downloads](https://img.shields.io/npm/dt/react-remove-bg.svg?maxAge=2592000)](https://img.shields.io/npm/dm/react-remove-bg.svg?maxAge=2592000)
 
 ### Installation
     npm install react-remove-bg
