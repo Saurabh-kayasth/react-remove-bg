@@ -6,6 +6,10 @@
 ### Installation
     npm install react-remove-bg
 
+### Demo
+ - Github: [react-remove-bg-example](https://github.com/Saurabh-kayasth/react-remove-bg-example)
+ - Live: Try [here](https://react-remove-bg-example.vercel.app/)
+
 ### Usage
 This module uses Tensorflow bodypix model.
 ```javascript
