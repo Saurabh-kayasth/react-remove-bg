@@ -9,8 +9,6 @@ require("core-js/modules/es.promise.js");
 
 require("core-js/modules/web.dom-collections.iterator.js");
 
-var _react = _interopRequireDefault(require("react"));
-
 var tf = _interopRequireWildcard(require("@tensorflow/tfjs"));
 
 var bodyPix = _interopRequireWildcard(require("@tensorflow-models/body-pix"));
@@ -19,9 +17,11 @@ function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "functio
 
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-const removeBGTF = async (imageSrc, callback) => {
+const removeBGTF = async (_ref, callback) => {
+  let {
+    imageSrc,
+    internalResolution = 'medium'
+  } = _ref;
   const img = new Image();
   img.src = imageSrc;
 
@@ -42,7 +42,7 @@ const removeBGTF = async (imageSrc, callback) => {
     const {
       data: map
     } = await net.segmentPerson(canvas, {
-      internalResolution: 'medium'
+      internalResolution
     });
 
     for (let i = 0; i < map.length; i++) {
@@ -59,7 +59,7 @@ const removeBGTF = async (imageSrc, callback) => {
     ctx.putImageData(imageData, 0, 0);
     const newImage = new Image();
     newImage.src = canvas.toDataURL();
-    callback(newImage); // return newImage;
+    callback(newImage);
   };
 };
 
