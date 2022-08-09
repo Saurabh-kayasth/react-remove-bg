@@ -27,6 +27,8 @@ removeBGTF({
 
 ```
 
+#### If you like this project, please consider buy me a coffee :)
+https://www.buymeacoffee.com/saurabhK100
 
 ## MIT License
 
